@@ -1,0 +1,71 @@
+{
+ "name": "s004_vacc",
+ "description": "Effect of the ioniser's accelerating potential on the Cs+ focus: V_acc 2.0, 2.5, 3.0 kV x cathode 5-10 kV x target position -6 to +2 mm (0.2 mm) at 20 kV extraction, 3 mA of caesium (space-charge limited).",
+ "config": "configs/source_sweep.cfg",
+ "fixed": {
+  "cs_profile": "../cascade/P375_I1.5.csv",
+  "V_ext": 20000,
+  "I_cs_A": 0.003
+ },
+ "grid": {
+  "V_acc": [
+   2000,
+   2500,
+   3000
+  ],
+  "V_c": [
+   5000,
+   6000,
+   7000,
+   8000,
+   9000,
+   10000
+  ],
+  "target_shift_mm": [
+   -6.0,
+   -5.8,
+   -5.6,
+   -5.4,
+   -5.2,
+   -5.0,
+   -4.8,
+   -4.6,
+   -4.4,
+   -4.2,
+   -4.0,
+   -3.8,
+   -3.6,
+   -3.4,
+   -3.2,
+   -3.0,
+   -2.8,
+   -2.6,
+   -2.4,
+   -2.2,
+   -2.0,
+   -1.8,
+   -1.6,
+   -1.4,
+   -1.2,
+   -1.0,
+   -0.8,
+   -0.6,
+   -0.4,
+   -0.2,
+   0.0,
+   0.2,
+   0.4,
+   0.6,
+   0.8,
+   1.0,
+   1.2,
+   1.4,
+   1.6,
+   1.8,
+   2.0
+  ]
+ },
+ "threads_per_case": 2,
+ "mem_gb_per_case": 2.5,
+ "timeout_s": 3600
+}
