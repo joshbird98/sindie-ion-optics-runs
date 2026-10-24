@@ -78,5 +78,6 @@
  ],
  "threads_per_case": 2,
  "mem_gb_per_case": 4,
- "timeout_s": 7200
+ "timeout_s": 7200,
+ "priority": 55
 }

@@ -46,5 +46,6 @@
   "object_mm": 3,
   "mass_mm": 3,
   "aperture": "ladder_9mm"
- }
+ },
+ "priority": 10
 }

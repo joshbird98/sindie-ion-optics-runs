@@ -1,6 +1,26 @@
-{"name": "s000_pilot",
+{
+ "name": "s000_pilot",
  "description": "Pilot on the cluster: run time, memory and parallel efficiency of the source sweep case (space-charge-limited Cs+ with the arrival profile at 375 W), V_c x target shift.",
  "config": "configs/source_sweep.cfg",
- "fixed": {"cs_profile": "../cascade/P375_I1.5.csv", "I_cs_A": 0.003},
- "grid": {"V_c": [5000, 8000, 10000], "target_shift_mm": [-4.0, -2.0, 0.0, 2.0]},
- "threads_per_case": 2, "mem_gb_per_case": 2.5, "timeout_s": 3600}
+ "fixed": {
+  "cs_profile": "../cascade/P375_I1.5.csv",
+  "I_cs_A": 0.003
+ },
+ "grid": {
+  "V_c": [
+   5000,
+   8000,
+   10000
+  ],
+  "target_shift_mm": [
+   -4.0,
+   -2.0,
+   0.0,
+   2.0
+  ]
+ },
+ "threads_per_case": 2,
+ "mem_gb_per_case": 2.5,
+ "timeout_s": 3600,
+ "priority": 0
+}

@@ -1,9 +1,38 @@
-{"name": "s010_3d_electrons",
+{
+ "name": "s010_3d_electrons",
  "description": "Three-dimensional model of the bombardment electrons (pillars, bolts, perforated shield, zig-zag filament) with and without the transverse field of the source magnets, at two mesh sizes. Footprint on the shell, share lost to the shroud, displacement by the magnets.",
- "program": "source_model_3d", "metrics": "source3d_metrics",
+ "program": "source_model_3d",
+ "metrics": "source3d_metrics",
  "config": "configs/source_3d.cfg",
- "fixed": {"I_cs_A": 0, "N_ef": 40000, "iterations": 12, "min_iterations": 4, "sc_tol_V": 0.2, "traj_stride": 100},
- "grid": {"h_mm": [0.33, 0.25], "magnets": ["false", "true"]},
- "threads_per_case": 16, "mem_gb_per_case": 14, "timeout_s": 21600,
- "publish_files": ["particles_ef.csv", "meta.json", "convergence.csv", "slice_y0.f32", "slice_z0.f32", "traj_ef.bin"],
- "publish_max_mb": 80}
+ "fixed": {
+  "I_cs_A": 0,
+  "N_ef": 40000,
+  "iterations": 12,
+  "min_iterations": 4,
+  "sc_tol_V": 0.2,
+  "traj_stride": 100
+ },
+ "grid": {
+  "h_mm": [
+   0.33,
+   0.25
+  ],
+  "magnets": [
+   "false",
+   "true"
+  ]
+ },
+ "threads_per_case": 16,
+ "mem_gb_per_case": 14,
+ "timeout_s": 21600,
+ "publish_files": [
+  "particles_ef.csv",
+  "meta.json",
+  "convergence.csv",
+  "slice_y0.f32",
+  "slice_z0.f32",
+  "traj_ef.bin"
+ ],
+ "publish_max_mb": 80,
+ "priority": 60
+}
