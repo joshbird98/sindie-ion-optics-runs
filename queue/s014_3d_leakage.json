@@ -1,0 +1,53 @@
+{
+ "name": "s014_3d_leakage",
+ "description": "Leakage of bombardment electrons in three dimensions: the domain holds the cavity outside the pillars and the source body (x -80 to 60 mm, +-80 mm), with and without the perforated shield, with and without the transverse field of the source magnets. The share of the 150 mA reaching ground parts is the leakage to the extraction supply (about 10% measured without the shield, none with it; 0.4% in the axisymmetric model).",
+ "program": "source_model_3d",
+ "metrics": "source3d_metrics",
+ "config": "configs/source_3d.cfg",
+ "cad_box": "-80,60,80",
+ "fixed": {
+  "cad": "../runs/stl3d_large",
+  "x_min_mm": -80,
+  "x_max_mm": 60,
+  "half_mm": 80,
+  "I_cs_A": 0,
+  "N_ef": 40000,
+  "iterations": 12,
+  "min_iterations": 4,
+  "sc_tol_V": 0.2,
+  "traj_stride": 100
+ },
+ "grid": {
+  "h_mm": [
+   0.5
+  ],
+  "magnets": [
+   "false",
+   "true"
+  ],
+  "skip_parts": [
+   "",
+   "Perforated_Shield"
+  ]
+ },
+ "cases": [
+  {
+   "h_mm": 0.4,
+   "magnets": "true",
+   "skip_parts": "Perforated_Shield"
+  }
+ ],
+ "threads_per_case": 16,
+ "mem_gb_per_case": 20,
+ "timeout_s": 43200,
+ "priority": 25,
+ "publish_files": [
+  "particles_ef.csv",
+  "meta.json",
+  "convergence.csv",
+  "slice_y0.f32",
+  "slice_z0.f32",
+  "traj_ef.bin"
+ ],
+ "publish_max_mb": 80
+}
