@@ -1,0 +1,173 @@
+{
+ "name": "s016_ops_supply",
+ "description": "The operating-point suite (s015) with the caesium supply below the space-charge limit: Cs+ 0.25, 0.5 and 1.0 mA (emission profiles of the cascade at 375 W, 0.5 and 1 mA throughput), V_c 8 and 10 kV, target at the CAD position and -2, -4 and -6 mm, 19 kV extraction, shroud as built; scored at the cup as s015. Less Cs+ gives less Si- but a smaller spot and a lower emittance.",
+ "config": "configs/source_sweep.cfg",
+ "fixed": {
+  "V_ext": 19000
+ },
+ "cases": [
+  {
+   "I_cs_A": 0.00025,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 8000,
+   "target_shift_mm": 0.0
+  },
+  {
+   "I_cs_A": 0.00025,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 8000,
+   "target_shift_mm": -2.0
+  },
+  {
+   "I_cs_A": 0.00025,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 8000,
+   "target_shift_mm": -4.0
+  },
+  {
+   "I_cs_A": 0.00025,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 8000,
+   "target_shift_mm": -6.0
+  },
+  {
+   "I_cs_A": 0.00025,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 10000,
+   "target_shift_mm": 0.0
+  },
+  {
+   "I_cs_A": 0.00025,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 10000,
+   "target_shift_mm": -2.0
+  },
+  {
+   "I_cs_A": 0.00025,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 10000,
+   "target_shift_mm": -4.0
+  },
+  {
+   "I_cs_A": 0.00025,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 10000,
+   "target_shift_mm": -6.0
+  },
+  {
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 8000,
+   "target_shift_mm": 0.0
+  },
+  {
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 8000,
+   "target_shift_mm": -2.0
+  },
+  {
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 8000,
+   "target_shift_mm": -4.0
+  },
+  {
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 8000,
+   "target_shift_mm": -6.0
+  },
+  {
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 10000,
+   "target_shift_mm": 0.0
+  },
+  {
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 10000,
+   "target_shift_mm": -2.0
+  },
+  {
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 10000,
+   "target_shift_mm": -4.0
+  },
+  {
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv",
+   "V_c": 10000,
+   "target_shift_mm": -6.0
+  },
+  {
+   "I_cs_A": 0.001,
+   "cs_profile": "../cascade/P375_I1.csv",
+   "V_c": 8000,
+   "target_shift_mm": 0.0
+  },
+  {
+   "I_cs_A": 0.001,
+   "cs_profile": "../cascade/P375_I1.csv",
+   "V_c": 8000,
+   "target_shift_mm": -2.0
+  },
+  {
+   "I_cs_A": 0.001,
+   "cs_profile": "../cascade/P375_I1.csv",
+   "V_c": 8000,
+   "target_shift_mm": -4.0
+  },
+  {
+   "I_cs_A": 0.001,
+   "cs_profile": "../cascade/P375_I1.csv",
+   "V_c": 8000,
+   "target_shift_mm": -6.0
+  },
+  {
+   "I_cs_A": 0.001,
+   "cs_profile": "../cascade/P375_I1.csv",
+   "V_c": 10000,
+   "target_shift_mm": 0.0
+  },
+  {
+   "I_cs_A": 0.001,
+   "cs_profile": "../cascade/P375_I1.csv",
+   "V_c": 10000,
+   "target_shift_mm": -2.0
+  },
+  {
+   "I_cs_A": 0.001,
+   "cs_profile": "../cascade/P375_I1.csv",
+   "V_c": 10000,
+   "target_shift_mm": -4.0
+  },
+  {
+   "I_cs_A": 0.001,
+   "cs_profile": "../cascade/P375_I1.csv",
+   "V_c": 10000,
+   "target_shift_mm": -6.0
+  }
+ ],
+ "threads_per_case": 2,
+ "mem_gb_per_case": 1.6,
+ "timeout_s": 5400,
+ "chain": {
+  "einzel_per_eV": [
+   -0.62,
+   -0.65,
+   -0.68,
+   -0.71,
+   -0.74,
+   -0.77
+  ],
+  "extend": 4,
+  "refine": 0.005,
+  "object_mm": 3,
+  "mass_mm": 3,
+  "aperture": "ladder_9mm"
+ },
+ "priority": 13
+}
