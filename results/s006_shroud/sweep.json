@@ -1,0 +1,47 @@
+{
+ "name": "s006_shroud",
+ "description": "Shroud bias relative to the ioniser: -2.5 to +1 kV x target position -4, -2, 0 mm x caesium supply 1 and 3 mA, at 20/8/2.5 kV. A positive shroud suppresses emission from the outer zone of the shell (the halo), tightening the spot and the Si- emittance at the cost of current.",
+ "config": "configs/source_sweep.cfg",
+ "thesis_commit": "744b711d6406e69d6d68effc606ccde906c7cdb3",
+ "host": "ibc-compute02.surrey.ac.uk",
+ "workers": 60,
+ "threads_per_case": 2,
+ "n_cases": 72,
+ "sweep": {
+  "name": "s006_shroud",
+  "description": "Shroud bias relative to the ioniser: -2.5 to +1 kV x target position -4, -2, 0 mm x caesium supply 1 and 3 mA, at 20/8/2.5 kV. A positive shroud suppresses emission from the outer zone of the shell (the halo), tightening the spot and the Si- emittance at the cost of current.",
+  "config": "configs/source_sweep.cfg",
+  "fixed": {
+   "cs_profile": "../cascade/P375_I1.5.csv"
+  },
+  "grid": {
+   "V_shroud_offset": [
+    -2500,
+    -1000,
+    -500,
+    -250,
+    0,
+    100,
+    200,
+    300,
+    400,
+    500,
+    750,
+    1000
+   ],
+   "target_shift_mm": [
+    -4.0,
+    -2.0,
+    0.0
+   ],
+   "I_cs_A": [
+    0.001,
+    0.003
+   ]
+  },
+  "threads_per_case": 2,
+  "mem_gb_per_case": 1.6,
+  "timeout_s": 3600,
+  "priority": 30
+ }
+}
