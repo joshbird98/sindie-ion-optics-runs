@@ -1,0 +1,54 @@
+{
+ "name": "s013_shroud_chain",
+ "description": "Shroud bias scored at the Faraday cup: shroud 0 to +1 kV above the ioniser x target position -2, -1, 0 mm x cathode 8 and 10 kV, at 20 kV extraction, supply above the space-charge limit, with the beamline chain. Tests whether a separate shroud supply would raise the analysed current (locally: +40% at the CAD position, +50% at -2 mm, for +500 V).",
+ "config": "configs/source_sweep.cfg",
+ "thesis_commit": "002ab01f1b739b21327f18b86da2e7f3c297cec5",
+ "host": "ibc-compute02.surrey.ac.uk",
+ "workers": 60,
+ "threads_per_case": 2,
+ "n_cases": 30,
+ "sweep": {
+  "name": "s013_shroud_chain",
+  "description": "Shroud bias scored at the Faraday cup: shroud 0 to +1 kV above the ioniser x target position -2, -1, 0 mm x cathode 8 and 10 kV, at 20 kV extraction, supply above the space-charge limit, with the beamline chain. Tests whether a separate shroud supply would raise the analysed current (locally: +40% at the CAD position, +50% at -2 mm, for +500 V).",
+  "config": "configs/source_sweep.cfg",
+  "fixed": {
+   "cs_profile": "../cascade/P375_I1.5.csv",
+   "I_cs_A": 0.003
+  },
+  "grid": {
+   "V_shroud_offset": [
+    0,
+    250,
+    500,
+    750,
+    1000
+   ],
+   "target_shift_mm": [
+    -2.0,
+    -1.0,
+    0.0
+   ],
+   "V_c": [
+    8000,
+    10000
+   ]
+  },
+  "threads_per_case": 2,
+  "mem_gb_per_case": 1.6,
+  "timeout_s": 3600,
+  "chain": {
+   "einzel_per_eV": [
+    -0.64,
+    -0.66,
+    -0.68,
+    -0.7,
+    -0.72,
+    -0.74
+   ],
+   "object_mm": 3,
+   "mass_mm": 3,
+   "aperture": "ladder_9mm"
+  },
+  "priority": 15
+ }
+}
