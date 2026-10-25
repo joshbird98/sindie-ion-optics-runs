@@ -1,0 +1,214 @@
+{
+ "name": "L001_local_scans",
+ "description": "local 1D scans for the draft of fig:source_ibsimu",
+ "config": "configs/source_sweep.cfg",
+ "thesis_commit": "10e06cdcfc20edcc1573b5eb6e3264b94fb1b9e5",
+ "host": "vm",
+ "workers": 1,
+ "threads_per_case": 2,
+ "n_cases": 44,
+ "sweep": {
+  "name": "L001_local_scans",
+  "description": "local 1D scans for the draft of fig:source_ibsimu",
+  "config": "configs/source_sweep.cfg",
+  "fixed": {
+   "cs_profile": "../cascade/P375_I1.5.csv"
+  },
+  "cases": [
+   {
+    "target_shift_mm": -6,
+    "I_cs_A": 0.003
+   },
+   {
+    "target_shift_mm": -5,
+    "I_cs_A": 0.003
+   },
+   {
+    "target_shift_mm": -4,
+    "I_cs_A": 0.003
+   },
+   {
+    "target_shift_mm": -3.5,
+    "I_cs_A": 0.003
+   },
+   {
+    "target_shift_mm": -3,
+    "I_cs_A": 0.003
+   },
+   {
+    "target_shift_mm": -2.5,
+    "I_cs_A": 0.003
+   },
+   {
+    "target_shift_mm": -2,
+    "I_cs_A": 0.003
+   },
+   {
+    "target_shift_mm": -1.5,
+    "I_cs_A": 0.003
+   },
+   {
+    "target_shift_mm": -1,
+    "I_cs_A": 0.003
+   },
+   {
+    "target_shift_mm": -0.5,
+    "I_cs_A": 0.003
+   },
+   {
+    "target_shift_mm": 0,
+    "I_cs_A": 0.003
+   },
+   {
+    "target_shift_mm": 0.5,
+    "I_cs_A": 0.003
+   },
+   {
+    "target_shift_mm": 1,
+    "I_cs_A": 0.003
+   },
+   {
+    "target_shift_mm": 2,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 5000,
+    "target_shift_mm": -4,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 5000,
+    "target_shift_mm": -2,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 5000,
+    "target_shift_mm": 0,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 6000,
+    "target_shift_mm": -4,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 6000,
+    "target_shift_mm": -2,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 6000,
+    "target_shift_mm": 0,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 7000,
+    "target_shift_mm": -4,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 7000,
+    "target_shift_mm": -2,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 7000,
+    "target_shift_mm": 0,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 9000,
+    "target_shift_mm": -4,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 9000,
+    "target_shift_mm": -2,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 9000,
+    "target_shift_mm": 0,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 10000,
+    "target_shift_mm": -4,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 10000,
+    "target_shift_mm": -2,
+    "I_cs_A": 0.003
+   },
+   {
+    "V_c": 10000,
+    "target_shift_mm": 0,
+    "I_cs_A": 0.003
+   },
+   {
+    "I_cs_A": 0.00025,
+    "target_shift_mm": -4
+   },
+   {
+    "I_cs_A": 0.00025,
+    "target_shift_mm": -2
+   },
+   {
+    "I_cs_A": 0.00025,
+    "target_shift_mm": 0
+   },
+   {
+    "I_cs_A": 0.0005,
+    "target_shift_mm": -4
+   },
+   {
+    "I_cs_A": 0.0005,
+    "target_shift_mm": -2
+   },
+   {
+    "I_cs_A": 0.0005,
+    "target_shift_mm": 0
+   },
+   {
+    "I_cs_A": 0.00075,
+    "target_shift_mm": -4
+   },
+   {
+    "I_cs_A": 0.00075,
+    "target_shift_mm": -2
+   },
+   {
+    "I_cs_A": 0.00075,
+    "target_shift_mm": 0
+   },
+   {
+    "I_cs_A": 0.001,
+    "target_shift_mm": -4
+   },
+   {
+    "I_cs_A": 0.001,
+    "target_shift_mm": -2
+   },
+   {
+    "I_cs_A": 0.001,
+    "target_shift_mm": 0
+   },
+   {
+    "I_cs_A": 0.00125,
+    "target_shift_mm": -4
+   },
+   {
+    "I_cs_A": 0.00125,
+    "target_shift_mm": -2
+   },
+   {
+    "I_cs_A": 0.00125,
+    "target_shift_mm": 0
+   }
+  ],
+  "threads_per_case": 2,
+  "mem_gb_per_case": 2.5,
+  "timeout_s": 3600
+ }
+}

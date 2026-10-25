@@ -1,0 +1,22 @@
+{
+ "name": "s021_source_focus_supply",
+ "description": "The Cs+ current at the focus position for fig:source_ibsimu (a): target -8 mm, V_c 8 kV, 20 kV extraction, Cs+ 0.25, 0.75 and 1.25 mA (s019 has 0.5 and 1.0 mA and the space-charge limit), as L001 and s003.",
+ "config": "configs/source_sweep.cfg",
+ "fixed": {
+  "cs_profile": "../cascade/P375_I1.5.csv",
+  "V_ext": 20000,
+  "V_c": 8000,
+  "target_shift_mm": -8.0
+ },
+ "grid": {
+  "I_cs_A": [
+   0.00025,
+   0.00075,
+   0.00125
+  ]
+ },
+ "threads_per_case": 2,
+ "mem_gb_per_case": 1.6,
+ "timeout_s": 3600,
+ "priority": 51
+}
