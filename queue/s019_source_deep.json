@@ -1,0 +1,335 @@
+{
+ "name": "s019_source_deep",
+ "description": "The source grid (s003) continued with the target rod recessed further into its sleeve: -6.5 to -12 mm x V_c 5 to 10 kV with the caesium supply above the space-charge limit, and Cs+ 0.5 and 1 mA at V_c 8 kV; 20 kV extraction, emission profile at 375 W, as s003. For fig:source_ibsimu.",
+ "config": "configs/source_sweep.cfg",
+ "fixed": {
+  "cs_profile": "../cascade/P375_I1.5.csv",
+  "V_ext": 20000
+ },
+ "cases": [
+  {
+   "V_c": 5000,
+   "target_shift_mm": -6.5,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 5000,
+   "target_shift_mm": -7.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 5000,
+   "target_shift_mm": -7.5,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 5000,
+   "target_shift_mm": -8.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 5000,
+   "target_shift_mm": -9.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 5000,
+   "target_shift_mm": -10.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 5000,
+   "target_shift_mm": -11.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 5000,
+   "target_shift_mm": -12.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -6.5,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -7.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -7.5,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -8.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -9.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -10.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -11.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -12.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -6.5,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -7.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -7.5,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -8.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -9.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -10.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -11.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -12.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -6.5,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.5,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -8.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -9.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -10.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -11.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -12.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -6.5,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -7.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -7.5,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -8.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -9.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -10.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -11.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -12.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -6.5,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -7.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -7.5,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -8.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -9.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -10.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -11.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -12.0,
+   "I_cs_A": 0.003
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.0,
+   "I_cs_A": 0.0005
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -8.0,
+   "I_cs_A": 0.0005
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -9.0,
+   "I_cs_A": 0.0005
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -10.0,
+   "I_cs_A": 0.0005
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -11.0,
+   "I_cs_A": 0.0005
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -12.0,
+   "I_cs_A": 0.0005
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -6.5,
+   "I_cs_A": 0.0005
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.5,
+   "I_cs_A": 0.0005
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.0,
+   "I_cs_A": 0.001
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -8.0,
+   "I_cs_A": 0.001
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -9.0,
+   "I_cs_A": 0.001
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -10.0,
+   "I_cs_A": 0.001
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -11.0,
+   "I_cs_A": 0.001
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -12.0,
+   "I_cs_A": 0.001
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -6.5,
+   "I_cs_A": 0.001
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.5,
+   "I_cs_A": 0.001
+  }
+ ],
+ "threads_per_case": 2,
+ "mem_gb_per_case": 1.6,
+ "timeout_s": 3600,
+ "priority": 16
+}
