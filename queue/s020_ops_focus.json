@@ -1,0 +1,141 @@
+{
+ "name": "s020_ops_focus",
+ "description": "The peak of s018 in detail: with the rod recessed so that the Cs+ focus lands on the silicon, the cup current rises about tenfold but within about 0.5 mm of depth. Target in 0.25 mm steps around the focus for V_c 6 (-9 to -11 mm), 8 (-7 to -9) and 10 kV (-6.5 to -8.5), 19 kV extraction, supply above the space-charge limit, with twice the Cs+ and Si- particles of s018 (N_cs 6000, N_si 10000), so that the sampling noise can be judged against s018; scored at the cup as s015.",
+ "config": "configs/source_sweep.cfg",
+ "fixed": {
+  "cs_profile": "../cascade/P375_I1.5.csv",
+  "I_cs_A": 0.003,
+  "V_ext": 19000,
+  "N_cs": 6000,
+  "N_si": 10000
+ },
+ "cases": [
+  {
+   "V_c": 6000,
+   "target_shift_mm": -9.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -9.25
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -9.5
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -9.75
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -10.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -10.25
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -10.5
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -10.75
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -11.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.25
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.5
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.75
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -8.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -8.25
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -8.5
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -8.75
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -9.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -6.5
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -6.75
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -7.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -7.25
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -7.5
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -7.75
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -8.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -8.25
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -8.5
+  }
+ ],
+ "threads_per_case": 2,
+ "mem_gb_per_case": 2.0,
+ "timeout_s": 7200,
+ "chain": {
+  "einzel_per_eV": [
+   -0.62,
+   -0.65,
+   -0.68,
+   -0.71,
+   -0.74,
+   -0.77
+  ],
+  "extend": 4,
+  "refine": 0.005,
+  "object_mm": 3,
+  "mass_mm": 3,
+  "aperture": "ladder_9mm"
+ },
+ "priority": 52
+}
