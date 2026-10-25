@@ -1,7 +1,7 @@
 {
  "host": "ibc-compute02.surrey.ac.uk",
- "started": "2026-10-25T11:53:34",
- "thesis_commit": "661bf2e06af6ba3b69327b867b33ade072adf267",
+ "started": "2026-10-25T13:51:51",
+ "thesis_commit": "0f2e34d5aa65cc8c763d68a7d0a0db7f830ca384",
  "threads_budget": 120,
  "cpu_count": 168,
  "mem_available_gb": 121.6,
