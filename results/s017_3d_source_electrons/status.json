@@ -1,9 +1,9 @@
 {
  "name": "s017_3d_source_electrons",
- "done": 3,
+ "done": 5,
  "failed": 0,
  "total": 6,
- "elapsed_h": 0.219,
- "eta_h": 0.219,
- "updated": "2026-10-25T15:28:41.098455"
+ "elapsed_h": 0.599,
+ "eta_h": 0.12,
+ "updated": "2026-10-25T15:51:29.096604"
 }
