@@ -1,0 +1,84 @@
+{
+ "name": "s017_3d_source_electrons",
+ "description": "s010 and s011 in one sweep, so that their six cases run at once. (1) Three-dimensional model of the bombardment electrons (pillars, bolts, perforated shield, zig-zag filament) with and without the transverse field of the source magnets, at two mesh sizes. Footprint on the shell, share lost to the shroud, displacement by the magnets. (2) Three-dimensional source at the nominal point (20/8/2.5 kV, 150 mA bombardment, 1.5 mA of caesium with space-charge-limited emission, Si- at 0.1 per Cs+), with and without the source magnets: Cs+ spot on the silicon, Si- steering and emittance in both planes.",
+ "program": "source_model_3d",
+ "metrics": "source3d_metrics",
+ "config": "configs/source_3d.cfg",
+ "fixed": {
+  "traj_stride": 100
+ },
+ "cases": [
+  {
+   "I_cs_A": 0,
+   "N_ef": 40000,
+   "iterations": 12,
+   "min_iterations": 4,
+   "sc_tol_V": 0.2,
+   "h_mm": 0.33,
+   "magnets": "false"
+  },
+  {
+   "I_cs_A": 0,
+   "N_ef": 40000,
+   "iterations": 12,
+   "min_iterations": 4,
+   "sc_tol_V": 0.2,
+   "h_mm": 0.33,
+   "magnets": "true"
+  },
+  {
+   "I_cs_A": 0,
+   "N_ef": 40000,
+   "iterations": 12,
+   "min_iterations": 4,
+   "sc_tol_V": 0.2,
+   "h_mm": 0.25,
+   "magnets": "false"
+  },
+  {
+   "I_cs_A": 0,
+   "N_ef": 40000,
+   "iterations": 12,
+   "min_iterations": 4,
+   "sc_tol_V": 0.2,
+   "h_mm": 0.25,
+   "magnets": "true"
+  },
+  {
+   "h_mm": 0.25,
+   "N_ef": 20000,
+   "N_cs": 20000,
+   "N_si": 20000,
+   "iterations": 30,
+   "min_iterations": 8,
+   "sc_tol_V": 0.5,
+   "magnets": "false"
+  },
+  {
+   "h_mm": 0.25,
+   "N_ef": 20000,
+   "N_cs": 20000,
+   "N_si": 20000,
+   "iterations": 30,
+   "min_iterations": 8,
+   "sc_tol_V": 0.5,
+   "magnets": "true"
+  }
+ ],
+ "threads_per_case": 16,
+ "mem_gb_per_case": 16,
+ "timeout_s": 36000,
+ "publish_files": [
+  "particles_ef.csv",
+  "meta.json",
+  "convergence.csv",
+  "slice_y0.f32",
+  "slice_z0.f32",
+  "traj_ef.bin",
+  "particles_cs.csv",
+  "particles_si.csv",
+  "planes_si.csv"
+ ],
+ "publish_max_mb": 200,
+ "priority": 60
+}
