@@ -2,7 +2,7 @@
  "name": "s012_chain",
  "description": "Source grid scored at the Faraday cup: for each case, the beamline chain (Einzel lens, 3 mm object and mass slits, 9 mm ladder hole) at six Einzel voltages scaled with the beam energy. Extraction 15, 17.5 and 20 kV x cathode 5 to 10 kV x target position -6 to +2 mm, caesium supply above the space-charge limit. For the operating point: the analysed 28Si- current, not just the source's.",
  "config": "configs/source_sweep.cfg",
- "thesis_commit": "002ab01f1b739b21327f18b86da2e7f3c297cec5",
+ "thesis_commit": "661bf2e06af6ba3b69327b867b33ade072adf267",
  "host": "ibc-compute02.surrey.ac.uk",
  "workers": 38,
  "threads_per_case": 2,
