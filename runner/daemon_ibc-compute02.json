@@ -1,0 +1,10 @@
+{
+ "host": "ibc-compute02.surrey.ac.uk",
+ "started": "2026-10-25T11:28:51",
+ "thesis_commit": "002ab01f1b739b21327f18b86da2e7f3c297cec5",
+ "threads_budget": 120,
+ "cpu_count": 168,
+ "mem_available_gb": 121.7,
+ "python": "3.12.15",
+ "work": "/user/HS301/jb0143/sindie/work"
+}
