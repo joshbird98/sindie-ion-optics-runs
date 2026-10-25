@@ -40,7 +40,7 @@
  "threads_per_case": 16,
  "mem_gb_per_case": 15,
  "timeout_s": 43200,
- "priority": 25,
+ "priority": 56,
  "publish_files": [
   "particles_ef.csv",
   "meta.json",
