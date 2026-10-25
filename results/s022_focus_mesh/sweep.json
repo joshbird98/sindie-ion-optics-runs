@@ -1,0 +1,162 @@
+{
+ "name": "s022_focus_mesh",
+ "description": "Is the jagged cup current near the Cs+ focus (s018, s020: 6 to 20 uA between neighbouring 0.25 mm steps, while the emittance and spot change smoothly) set by the mesh? V_c 8 kV, 19 kV extraction, supply above the limit: h 0.1 mm in 0.1 mm steps from -7.5 to -9 mm, and h 0.07 and 0.05 mm in 0.25 mm steps over the same range; scored at the cup as s015.",
+ "config": "configs/source_sweep.cfg",
+ "thesis_commit": "0f2e34d5aa65cc8c763d68a7d0a0db7f830ca384",
+ "host": "ibc-compute02.surrey.ac.uk",
+ "workers": 19,
+ "threads_per_case": 2,
+ "n_cases": 30,
+ "sweep": {
+  "name": "s022_focus_mesh",
+  "description": "Is the jagged cup current near the Cs+ focus (s018, s020: 6 to 20 uA between neighbouring 0.25 mm steps, while the emittance and spot change smoothly) set by the mesh? V_c 8 kV, 19 kV extraction, supply above the limit: h 0.1 mm in 0.1 mm steps from -7.5 to -9 mm, and h 0.07 and 0.05 mm in 0.25 mm steps over the same range; scored at the cup as s015.",
+  "config": "configs/source_sweep.cfg",
+  "fixed": {
+   "cs_profile": "../cascade/P375_I1.5.csv",
+   "I_cs_A": 0.003,
+   "V_ext": 19000,
+   "V_c": 8000
+  },
+  "cases": [
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -7.5
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -7.6
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -7.7
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -7.8
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -7.9
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -8.0
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -8.1
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -8.2
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -8.3
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -8.4
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -8.5
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -8.6
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -8.7
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -8.8
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -8.9
+   },
+   {
+    "h_mm": 0.1,
+    "target_shift_mm": -9.0
+   },
+   {
+    "h_mm": 0.07,
+    "target_shift_mm": -7.5
+   },
+   {
+    "h_mm": 0.07,
+    "target_shift_mm": -7.75
+   },
+   {
+    "h_mm": 0.07,
+    "target_shift_mm": -8.0
+   },
+   {
+    "h_mm": 0.07,
+    "target_shift_mm": -8.25
+   },
+   {
+    "h_mm": 0.07,
+    "target_shift_mm": -8.5
+   },
+   {
+    "h_mm": 0.07,
+    "target_shift_mm": -8.75
+   },
+   {
+    "h_mm": 0.07,
+    "target_shift_mm": -9.0
+   },
+   {
+    "h_mm": 0.05,
+    "target_shift_mm": -7.5
+   },
+   {
+    "h_mm": 0.05,
+    "target_shift_mm": -7.75
+   },
+   {
+    "h_mm": 0.05,
+    "target_shift_mm": -8.0
+   },
+   {
+    "h_mm": 0.05,
+    "target_shift_mm": -8.25
+   },
+   {
+    "h_mm": 0.05,
+    "target_shift_mm": -8.5
+   },
+   {
+    "h_mm": 0.05,
+    "target_shift_mm": -8.75
+   },
+   {
+    "h_mm": 0.05,
+    "target_shift_mm": -9.0
+   }
+  ],
+  "threads_per_case": 2,
+  "mem_gb_per_case": 5,
+  "timeout_s": 7200,
+  "chain": {
+   "einzel_per_eV": [
+    -0.62,
+    -0.65,
+    -0.68,
+    -0.71,
+    -0.74,
+    -0.77
+   ],
+   "extend": 4,
+   "refine": 0.005,
+   "object_mm": 3,
+   "mass_mm": 3,
+   "aperture": "ladder_9mm"
+  },
+  "priority": 53
+ }
+}
