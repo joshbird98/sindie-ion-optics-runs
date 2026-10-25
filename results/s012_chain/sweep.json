@@ -1,0 +1,61 @@
+{
+ "name": "s012_chain",
+ "description": "Source grid scored at the Faraday cup: for each case, the beamline chain (Einzel lens, 3 mm object and mass slits, 9 mm ladder hole) at six Einzel voltages scaled with the beam energy. Extraction 15, 17.5 and 20 kV x cathode 5 to 10 kV x target position -6 to +2 mm, caesium supply above the space-charge limit. For the operating point: the analysed 28Si- current, not just the source's.",
+ "config": "configs/source_sweep.cfg",
+ "thesis_commit": "002ab01f1b739b21327f18b86da2e7f3c297cec5",
+ "host": "ibc-compute02.surrey.ac.uk",
+ "workers": 38,
+ "threads_per_case": 2,
+ "n_cases": 144,
+ "sweep": {
+  "name": "s012_chain",
+  "description": "Source grid scored at the Faraday cup: for each case, the beamline chain (Einzel lens, 3 mm object and mass slits, 9 mm ladder hole) at six Einzel voltages scaled with the beam energy. Extraction 15, 17.5 and 20 kV x cathode 5 to 10 kV x target position -6 to +2 mm, caesium supply above the space-charge limit. For the operating point: the analysed 28Si- current, not just the source's.",
+  "config": "configs/source_sweep.cfg",
+  "fixed": {
+   "cs_profile": "../cascade/P375_I1.5.csv",
+   "I_cs_A": 0.003
+  },
+  "grid": {
+   "V_ext": [
+    15000,
+    17500,
+    20000
+   ],
+   "V_c": [
+    5000,
+    6000,
+    7000,
+    8000,
+    9000,
+    10000
+   ],
+   "target_shift_mm": [
+    -6.0,
+    -4.0,
+    -3.0,
+    -2.0,
+    -1.0,
+    0.0,
+    1.0,
+    2.0
+   ]
+  },
+  "threads_per_case": 2,
+  "mem_gb_per_case": 2.5,
+  "timeout_s": 3600,
+  "chain": {
+   "einzel_per_eV": [
+    -0.64,
+    -0.66,
+    -0.68,
+    -0.7,
+    -0.72,
+    -0.74
+   ],
+   "object_mm": 3,
+   "mass_mm": 3,
+   "aperture": "ladder_9mm"
+  },
+  "priority": 10
+ }
+}
