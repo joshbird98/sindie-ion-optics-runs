@@ -1,0 +1,93 @@
+{
+ "name": "s007_yield_mesh",
+ "description": "Checks: Si- yield 0.05 and 0.2 (nominal 0.1), and the finer 0.07 mm mesh, at the nominal point and three target positions.",
+ "config": "configs/source_sweep.cfg",
+ "thesis_commit": "0f2e34d5aa65cc8c763d68a7d0a0db7f830ca384",
+ "host": "ibc-compute02.surrey.ac.uk",
+ "workers": 24,
+ "threads_per_case": 2,
+ "n_cases": 12,
+ "sweep": {
+  "name": "s007_yield_mesh",
+  "description": "Checks: Si- yield 0.05 and 0.2 (nominal 0.1), and the finer 0.07 mm mesh, at the nominal point and three target positions.",
+  "config": "configs/source_sweep.cfg",
+  "cases": [
+   {
+    "si_yield": 0.05,
+    "target_shift_mm": -4.0,
+    "I_cs_A": 0.003,
+    "cs_profile": "../cascade/P375_I1.5.csv"
+   },
+   {
+    "si_yield": 0.05,
+    "target_shift_mm": -2.0,
+    "I_cs_A": 0.003,
+    "cs_profile": "../cascade/P375_I1.5.csv"
+   },
+   {
+    "si_yield": 0.05,
+    "target_shift_mm": 0.0,
+    "I_cs_A": 0.003,
+    "cs_profile": "../cascade/P375_I1.5.csv"
+   },
+   {
+    "si_yield": 0.2,
+    "target_shift_mm": -4.0,
+    "I_cs_A": 0.003,
+    "cs_profile": "../cascade/P375_I1.5.csv"
+   },
+   {
+    "si_yield": 0.2,
+    "target_shift_mm": -2.0,
+    "I_cs_A": 0.003,
+    "cs_profile": "../cascade/P375_I1.5.csv"
+   },
+   {
+    "si_yield": 0.2,
+    "target_shift_mm": 0.0,
+    "I_cs_A": 0.003,
+    "cs_profile": "../cascade/P375_I1.5.csv"
+   },
+   {
+    "h_mm": 0.07,
+    "target_shift_mm": -4.0,
+    "I_cs_A": 0.001,
+    "cs_profile": "../cascade/P375_I1.5.csv"
+   },
+   {
+    "h_mm": 0.07,
+    "target_shift_mm": -4.0,
+    "I_cs_A": 0.003,
+    "cs_profile": "../cascade/P375_I1.5.csv"
+   },
+   {
+    "h_mm": 0.07,
+    "target_shift_mm": -2.0,
+    "I_cs_A": 0.001,
+    "cs_profile": "../cascade/P375_I1.5.csv"
+   },
+   {
+    "h_mm": 0.07,
+    "target_shift_mm": -2.0,
+    "I_cs_A": 0.003,
+    "cs_profile": "../cascade/P375_I1.5.csv"
+   },
+   {
+    "h_mm": 0.07,
+    "target_shift_mm": 0.0,
+    "I_cs_A": 0.001,
+    "cs_profile": "../cascade/P375_I1.5.csv"
+   },
+   {
+    "h_mm": 0.07,
+    "target_shift_mm": 0.0,
+    "I_cs_A": 0.003,
+    "cs_profile": "../cascade/P375_I1.5.csv"
+   }
+  ],
+  "threads_per_case": 2,
+  "mem_gb_per_case": 4,
+  "timeout_s": 7200,
+  "priority": 55
+ }
+}
