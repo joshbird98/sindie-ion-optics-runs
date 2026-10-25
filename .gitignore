@@ -1,0 +1,2 @@
+# NFS keeps deleted files that are still open as .nfs*; never commit them
+.nfs*
