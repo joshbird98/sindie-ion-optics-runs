@@ -38,7 +38,7 @@
   }
  ],
  "threads_per_case": 16,
- "mem_gb_per_case": 20,
+ "mem_gb_per_case": 15,
  "timeout_s": 43200,
  "priority": 25,
  "publish_files": [
