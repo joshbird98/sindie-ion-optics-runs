@@ -1,9 +1,9 @@
 {
  "name": "s028_ops_20kV_resolution",
- "done": 92,
+ "done": 110,
  "failed": 0,
  "total": 183,
- "elapsed_h": 0.17,
- "eta_h": 0.169,
- "updated": "2026-10-28T15:58:45.614981"
+ "elapsed_h": 0.256,
+ "eta_h": 0.17,
+ "updated": "2026-10-28T16:03:53.232496"
 }
