@@ -1,0 +1,56 @@
+{
+ "name": "s026_3d_source_9kV",
+ "description": "The two source cases of s017 (Cs+ and Si- in 3D, magnets off and on, h 0.25 mm) at the implant's cathode voltage, 20/9/2.5 kV (Josh, 28 Oct).",
+ "config": "configs/source_3d.cfg",
+ "thesis_commit": "a9727efa7dfaf97ee012b181cab820502a78a105",
+ "host": "ibc-compute02.surrey.ac.uk",
+ "workers": 6,
+ "threads_per_case": 16,
+ "n_cases": 2,
+ "sweep": {
+  "name": "s026_3d_source_9kV",
+  "description": "The two source cases of s017 (Cs+ and Si- in 3D, magnets off and on, h 0.25 mm) at the implant's cathode voltage, 20/9/2.5 kV (Josh, 28 Oct).",
+  "program": "source_model_3d",
+  "metrics": "source3d_metrics",
+  "config": "configs/source_3d.cfg",
+  "fixed": {
+   "traj_stride": 100
+  },
+  "cases": [
+   {
+    "h_mm": 0.25,
+    "N_ef": 20000,
+    "N_cs": 20000,
+    "N_si": 20000,
+    "iterations": 30,
+    "min_iterations": 8,
+    "sc_tol_V": 0.5,
+    "magnets": "false",
+    "V_c": 9000
+   },
+   {
+    "h_mm": 0.25,
+    "N_ef": 20000,
+    "N_cs": 20000,
+    "N_si": 20000,
+    "iterations": 30,
+    "min_iterations": 8,
+    "sc_tol_V": 0.5,
+    "magnets": "true",
+    "V_c": 9000
+   }
+  ],
+  "threads_per_case": 16,
+  "mem_gb_per_case": 16,
+  "timeout_s": 36000,
+  "publish_files": [
+   "meta.json",
+   "convergence.csv",
+   "particles_cs.csv",
+   "particles_si.csv",
+   "planes_si.csv"
+  ],
+  "publish_max_mb": 60,
+  "priority": 30
+ }
+}
