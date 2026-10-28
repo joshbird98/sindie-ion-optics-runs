@@ -1,9 +1,9 @@
 {
  "name": "s027_ops_20kV_implant",
- "done": 94,
+ "done": 110,
  "failed": 0,
  "total": 183,
- "elapsed_h": 0.169,
- "eta_h": 0.16,
- "updated": "2026-10-28T15:38:21.589751"
+ "elapsed_h": 0.256,
+ "eta_h": 0.17,
+ "updated": "2026-10-28T15:43:34.600941"
 }
