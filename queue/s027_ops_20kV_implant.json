@@ -1,0 +1,894 @@
+{
+ "name": "s027_ops_20kV_implant",
+ "description": "The operating-point suite (s015, s016, s018, s020) at 20 kV extraction, the implant's (Josh, 28 Oct), scored at the cup behind the implant stage's 9 mm aperture with the 10 mm ladder hole and the jaws at 11 mm; (b, c) at V_c 9 kV.",
+ "config": "configs/source_sweep.cfg",
+ "fixed": {
+  "cs_profile": "../cascade/P375_I1.5.csv",
+  "I_cs_A": 0.003,
+  "V_ext": 20000
+ },
+ "cases": [
+  {
+   "V_c": 6000,
+   "target_shift_mm": -6.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -5.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -4.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -3.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -2.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -1.5
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -1.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -0.5
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": 0.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": 0.5
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": 1.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": 1.5
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": 2.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -6.5
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -7.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -7.5
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -8.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -9.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -10.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -11.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -12.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -6.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -5.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -4.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -3.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -2.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -1.5
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -1.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -0.5
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": 0.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": 0.5
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": 1.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": 1.5
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": 2.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -6.5
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -7.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -7.5
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -8.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -9.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -10.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -11.0
+  },
+  {
+   "V_c": 7000,
+   "target_shift_mm": -12.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -6.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -5.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -4.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -3.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -2.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -1.5
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -1.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -0.5
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": 0.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": 0.5
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": 1.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": 1.5
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": 2.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -6.5
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.5
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -8.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -9.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -10.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -11.0
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -12.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -6.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -5.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -4.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -3.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -2.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -1.5
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -1.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -0.5
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": 0.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": 0.5
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": 1.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": 1.5
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": 2.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -6.5
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -7.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -7.5
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -8.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -9.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -10.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -11.0
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -12.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -6.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -5.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -4.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -3.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -2.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -1.5
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -1.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -0.5
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": 0.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": 0.5
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": 1.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": 1.5
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": 2.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -6.5
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -7.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -7.5
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -8.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -9.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -10.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -11.0
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -12.0
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -11.0,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -10.75,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -10.5,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -10.25,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -10.0,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -9.75,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -9.5,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -9.25,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 6000,
+   "target_shift_mm": -9.0,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -9.0,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -8.75,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -8.5,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -8.25,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -8.0,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.75,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.5,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.25,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 8000,
+   "target_shift_mm": -7.0,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -8.75,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -8.5,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -8.25,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -8.0,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -7.75,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -7.5,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -7.25,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -7.0,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -6.75,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -8.5,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -8.25,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -8.0,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -7.75,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -7.5,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -7.25,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -7.0,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -6.75,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 10000,
+   "target_shift_mm": -6.5,
+   "N_cs": 6000,
+   "N_si": 10000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": 0.0,
+   "I_cs_A": 0.00025,
+   "cs_profile": "../cascade/P375_I0.5.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": 0.0,
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": 0.0,
+   "I_cs_A": 0.001,
+   "cs_profile": "../cascade/P375_I1.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -2.0,
+   "I_cs_A": 0.00025,
+   "cs_profile": "../cascade/P375_I0.5.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -2.0,
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -2.0,
+   "I_cs_A": 0.001,
+   "cs_profile": "../cascade/P375_I1.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -4.0,
+   "I_cs_A": 0.00025,
+   "cs_profile": "../cascade/P375_I0.5.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -4.0,
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -4.0,
+   "I_cs_A": 0.001,
+   "cs_profile": "../cascade/P375_I1.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -6.0,
+   "I_cs_A": 0.00025,
+   "cs_profile": "../cascade/P375_I0.5.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -6.0,
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -6.0,
+   "I_cs_A": 0.001,
+   "cs_profile": "../cascade/P375_I1.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -7.0,
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -8.0,
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -10.0,
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -12.0,
+   "I_cs_A": 0.0005,
+   "cs_profile": "../cascade/P375_I0.5.csv"
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -2.0,
+   "V_shroud_offset": 250
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -1.0,
+   "V_shroud_offset": 250
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": 0.0,
+   "V_shroud_offset": 250
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -2.0,
+   "V_shroud_offset": 500
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -1.0,
+   "V_shroud_offset": 500
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": 0.0,
+   "V_shroud_offset": 500
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -2.0,
+   "V_shroud_offset": 1500
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -1.0,
+   "V_shroud_offset": 1500
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": 0.0,
+   "V_shroud_offset": 1500
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -2.0,
+   "V_shroud_offset": 2500
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -1.0,
+   "V_shroud_offset": 2500
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": 0.0,
+   "V_shroud_offset": 2500
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -6.0,
+   "V_shroud_offset": 1000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -5.0,
+   "V_shroud_offset": 1000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -4.0,
+   "V_shroud_offset": 1000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -3.0,
+   "V_shroud_offset": 1000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -2.0,
+   "V_shroud_offset": 1000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -1.0,
+   "V_shroud_offset": 1000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": 0.0,
+   "V_shroud_offset": 1000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -6.0,
+   "V_shroud_offset": 2000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -5.0,
+   "V_shroud_offset": 2000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -4.0,
+   "V_shroud_offset": 2000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -3.0,
+   "V_shroud_offset": 2000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -2.0,
+   "V_shroud_offset": 2000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": -1.0,
+   "V_shroud_offset": 2000
+  },
+  {
+   "V_c": 9000,
+   "target_shift_mm": 0.0,
+   "V_shroud_offset": 2000
+  }
+ ],
+ "threads_per_case": 2,
+ "mem_gb_per_case": 2.0,
+ "timeout_s": 7200,
+ "chain": {
+  "einzel_per_eV": [
+   -0.62,
+   -0.65,
+   -0.68,
+   -0.71,
+   -0.74,
+   -0.77
+  ],
+  "extend": 4,
+  "refine": 0.005,
+  "object_mm": 3,
+  "aperture": "ladder_10mm",
+  "mass_mm": 11,
+  "post_aperture_mm": 9
+ },
+ "priority": 10
+}
