@@ -1,9 +1,9 @@
 {
  "name": "s029_ops_20kV_implant_jaws9",
- "done": 110,
+ "done": 183,
  "failed": 0,
  "total": 183,
- "elapsed_h": 0.257,
- "eta_h": 0.171,
- "updated": "2026-10-29T10:37:56.980680"
+ "elapsed_h": 0.338,
+ "eta_h": 0.0,
+ "updated": "2026-10-29T10:42:46.926036"
 }
