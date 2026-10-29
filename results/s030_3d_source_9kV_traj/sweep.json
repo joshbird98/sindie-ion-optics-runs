@@ -1,0 +1,48 @@
+{
+ "name": "s030_3d_source_9kV_traj",
+ "description": "The as-built case of s026 (the 3D source with the suppression magnets, 20/9/2.5 kV, 1.5 mA of caesium, target at its CAD position, h 0.25 mm) again, publishing the trajectories of every 50th particle of each species (electrons, Cs+, Si-) for the 3D figure of the source (29 Oct).",
+ "config": "configs/source_3d.cfg",
+ "thesis_commit": "18fa82c7cbd3858333b39e176c906721290ff7ab",
+ "host": "ibc-compute02.surrey.ac.uk",
+ "workers": 6,
+ "threads_per_case": 16,
+ "n_cases": 1,
+ "sweep": {
+  "name": "s030_3d_source_9kV_traj",
+  "description": "The as-built case of s026 (the 3D source with the suppression magnets, 20/9/2.5 kV, 1.5 mA of caesium, target at its CAD position, h 0.25 mm) again, publishing the trajectories of every 50th particle of each species (electrons, Cs+, Si-) for the 3D figure of the source (29 Oct).",
+  "program": "source_model_3d",
+  "metrics": "source3d_metrics",
+  "config": "configs/source_3d.cfg",
+  "fixed": {
+   "traj_stride": 50,
+   "traj_max_points": 800
+  },
+  "cases": [
+   {
+    "h_mm": 0.25,
+    "N_ef": 20000,
+    "N_cs": 20000,
+    "N_si": 20000,
+    "iterations": 30,
+    "min_iterations": 8,
+    "sc_tol_V": 0.5,
+    "magnets": "true",
+    "V_c": 9000
+   }
+  ],
+  "threads_per_case": 16,
+  "mem_gb_per_case": 16,
+  "timeout_s": 36000,
+  "publish_files": [
+   "meta.json",
+   "convergence.csv",
+   "traj_ef.bin",
+   "traj_cs.bin",
+   "traj_si.bin",
+   "particles_ef.csv",
+   "particles_cs.csv"
+  ],
+  "publish_max_mb": 60,
+  "priority": 5
+ }
+}
